@@ -152,7 +152,7 @@ function CheckFW() {
     else if (/Windows/.test(userAgent)) platform = 'Windows';
     else if (/Linux/.test(userAgent)) platform = 'Linux';
 
-    document.getElementById('PS4FW').textContent = `You're not on a PS4, platform: ${platform}`;
+    document.getElementById('PS4FW').textContent =  `هذا ليس جهاز بلايستيشن 4 : ${platform} نظام التشغيل `;
     document.getElementById('PS4FW').style.color = 'red';
 
     elementsToHide.forEach(id => {
