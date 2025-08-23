@@ -122,7 +122,7 @@ function CheckFW() {
       fwVersion === '8.50' || fwVersion === '8.52' || fwVersion === '9.04' ||
       fwVersion === '9.50' || fwVersion === '9.51'
     ) {
-      document.getElementById('PS4FW').textContent = `PS4 FW: ${fwVersion} | Compatible`;
+      document.getElementById('PS4FW').textContent = `PS4 FW: ${fwVersion} | متوافق`;
       document.getElementById('PS4FW').style.color = 'green';
       ps4fw = fwVersion.replace('.', '');
       document.getElementById('install-psfrf').style.display = 'flex';
@@ -133,7 +133,7 @@ function CheckFW() {
         document.getElementById('linuxb').style.display = 'flex';
       }
     } else {
-      document.getElementById('PS4FW').textContent = `PS4 FW: ${fwVersion || 'Unknown'} | Incompatible`;
+      document.getElementById('PS4FW').textContent = `PS4 FW: ${fwVersion || 'Unknown'} | مرفوض`;
       document.getElementById('PS4FW').style.color = 'red';
 
       elementsToHide.forEach(id => {
